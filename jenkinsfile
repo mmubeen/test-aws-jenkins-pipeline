@@ -10,7 +10,7 @@ pipeline {
         stage('build') {
             steps {
                     withAWS(region: 'us-east-2') {
-                        sh 'aws --version'
+                        sh 'aws iam get-role --role-name Test-Role'
                     }
             }
         }
