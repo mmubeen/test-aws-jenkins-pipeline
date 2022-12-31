@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                   withAWS(region = 'us-east-2'){
+                    withAWS(region: 'us-east-2') {
                         sh 'aws --version'
                     }
             }
