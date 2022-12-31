@@ -5,7 +5,7 @@ pipeline {
         stage('build') {
             steps {
              
-                    sh '/usr/bin/aws iam list-roles'
+                    sh 'aws iam list-roles'
               
             }
         }
