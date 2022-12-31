@@ -4,9 +4,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                /* withAWS(region: 'us-east-2') {
+             
                     sh '/usr/bin/aws iam list-roles'
-                /*}
+              
             }
         }
     }
